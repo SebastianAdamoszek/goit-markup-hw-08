@@ -1,0 +1,53 @@
+.social-icons__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.social-icon__box--space {
+  padding-top: 20px;
+}
+.social-icons__item {
+  border-radius: 50%;
+  text-align: center;
+  width: 44px;
+  height: 44px;
+  padding-top: 12px;
+  cursor: pointer;
+  transition: var(--transition);
+
+  &:focus,
+  &:hover {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+  }
+}
+.social-icons__icon {
+  width: 20px;
+  height: 20px;
+}
+// changes for component card-person
+
+.card__social-icon__item {
+  color: var(--gray-color);
+}
+
+// changes for footer
+
+.footer__title {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.footer__social-icons__box {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+.footer__social-icons__item {
+  background-color: var(--gray-color);
+  color: var(--white-color);
+}

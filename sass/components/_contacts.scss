@@ -1,0 +1,63 @@
+.header__contacts__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.header__link--color {
+  color: var(--gray-color);  
+
+}
+.header__link--color:hover {
+  color: var(--blue-color);
+}
+
+.header__icon-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.header__icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+// header text decoration
+
+.contact--underline {
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 0;
+    height: 4px;
+    position: absolute;
+    top: 49.5px;
+    right: 0;
+    border-radius: 2px;
+    background: var(--blue-color);
+    transition: width 0.5s, right 0.5s;
+  }
+  &:hover::after {
+    width: 100%;
+    left: 0;
+  }
+}
+// footer contacts links
+
+.footer__address--padding {
+  padding-top: 16px;
+}
+
+.footer__link--color-white {
+  color: var(--white-color);
+  line-height: 2.2;
+}
+.footer__link--color-gray {
+  color: var(--light-gray-text-color);
+  line-height: 2.2;
+}

@@ -1,0 +1,40 @@
+:root {
+  --black-text-color: #212121;
+  --white-color: #ffffff;
+  --gray-color: #757575;
+  --dark-color: #2f303a;
+  --blue-color: #2196f3;
+  --line-main-color: #e5e5e5;
+  --light-gray-color: #f5f4f5;
+  --logo-black-color: #000000;
+  --bg-team-white-color: #f4f5fa;
+  --light-gray-text-color: rgba(255, 255, 255, 0.6);
+  --banner-background: rgba(47, 48, 58, 0.4);
+  --grey-transparent-background: rgba(47, 48, 58, 0.8);
+  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: 
+    transform 500ms var(--cubic-bezier),
+    background-color 500ms var(--cubic-bezier),
+    border-color 250ms var(--cubic-bezier),
+    color 250ms var(--cubic-bezier),
+    fill var(--cubic-bezier),
+    visibility 250ms var(--cubic-bezier);  
+  --blue-transparent-background: #2196f3e6;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  background: var(--white-color);
+  color: var(--black-text-color);
+  line-height: 1.8;
+  letter-spacing: 0.03rem;
+  
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}

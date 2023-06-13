@@ -1,0 +1,59 @@
+.section__portfolio__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+.card {
+ 
+  h3 {
+    position: relative;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    padding: 20px 0px 4px 24px;
+    background: var(--white-color);
+    position: relative;
+  }
+
+  h4 {
+    line-height: 2.2;
+    color: var(--gray-color);
+    padding-left: 24px;
+    padding-bottom: 20px;
+    background: var(--white-color);
+    position: relative;
+  }
+}
+
+.card__item {
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+  }
+}
+
+.card--hidden {
+  background-color: var(--blue-transparent-background);
+  position: absolute;
+  margin: 0 auto;
+  padding: 60px 25px 50px 20px;
+  transition: var(--transition);
+  transform: translateY(100%);
+
+  p {
+    font-size: 18px;
+    line-height: 1.55;
+    padding-left: 24px;
+    color: var(--white-color);
+  }
+}
+
+.card__item:hover .card--hidden,
+.card__item:focus .card--hidden {
+  transform: translateY(0%);
+}

@@ -1,0 +1,44 @@
+.banner {
+  text-align: center;
+  background: var(--dark-color);
+  background: url("../images/banner/banner.jpg") no-repeat 50% 50% / cover;
+}
+.banner__gradient {
+  background-color: var(--banner-background);
+  padding: 200px;
+
+  h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    width: 617px;
+    margin: 0 auto;
+  }
+}
+
+.banner__button {
+  margin-top: 30px;
+  background: var(--blue-color);
+  border: 2px solid var(--blue-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px 41px;
+  transition: var(--transition);
+
+  &:focus,
+  &:hover {
+    transition: var(--transition);
+    transform: scale(1.1);
+  }
+}
+
+.banner__button__text {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white-color);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}

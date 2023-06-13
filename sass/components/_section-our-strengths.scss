@@ -1,0 +1,27 @@
+.our-strengths__icon {
+  margin-bottom: 30px;
+  background-color: var(--light-gray-color);
+  border-radius: 4px;
+  text-align: center;
+  padding: 25px 0px 25px 0px;
+
+  svg {
+    width: 70px;
+    height: 70px;
+    cursor: auto;
+  }
+}
+
+.our-strengths {
+  h5 {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 3;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.46;
+    color: var(--gray-color);
+  }
+}

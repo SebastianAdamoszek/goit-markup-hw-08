@@ -1,0 +1,9 @@
+.header-wrapper {
+  display: flex;
+  align-items:first baseline;
+  justify-content: space-between;
+  padding: 20px 200px 20px 200px;
+}
+.header--box {
+  border-bottom: 1px solid var(--line-main-color);
+}
