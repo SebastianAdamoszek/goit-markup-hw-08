@@ -1,7 +1,8 @@
 .section__portfolio__box {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
+flex-direction: column;
   gap: 30px;
 }
 .card {
@@ -56,4 +57,13 @@
 .card__item:hover .card--hidden,
 .card__item:focus .card--hidden {
   transform: translateY(0%);
+}
+@media screen and (min-width: 1200px) {
+
+  .section__portfolio__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
 }

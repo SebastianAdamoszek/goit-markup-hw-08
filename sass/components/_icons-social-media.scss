@@ -44,10 +44,23 @@
 .footer__social-icons__box {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-bottom: 40px;
 }
 
 .footer__social-icons__item {
   background-color: var(--gray-color);
   color: var(--white-color);
+}
+
+@media screen and (min-width: 1200px) {
+
+// changes for footer
+
+.footer__social-icons__box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 40px;
+}
 }

@@ -1,7 +1,8 @@
 
 .our-team__wrapper--background {
   background: var(--bg-team-white-color);
-  width: 1600px;
+  max-width: 1600px;
+  margin: 0 auto;
  }
 
 // in this section are component card-person

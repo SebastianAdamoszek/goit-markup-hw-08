@@ -5,7 +5,7 @@
   text-align: center;
   padding: 25px 0px 25px 0px;
 
-  svg {
+   svg {
     width: 70px;
     height: 70px;
     cursor: auto;
@@ -13,7 +13,11 @@
 }
 
 .our-strengths {
+  li { 
+    width: 450px;
+  }
   h5 {
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
@@ -24,4 +28,16 @@
     line-height: 1.46;
     color: var(--gray-color);
   }
+}
+
+@media screen and (min-width: 1200px) {
+
+.our-strengths {
+  li { 
+    width: auto;
+  }
+  h5 {
+  text-align: left;
+  }
+}
 }
