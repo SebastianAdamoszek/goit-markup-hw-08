@@ -25,6 +25,7 @@
 @media screen and (min-width: 1200px) {
   .footer-wrapper {
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 60px 200px 60px 200px;
 
