@@ -1,7 +1,7 @@
 .banner {
   text-align: center;
   background: var(--dark-color);
-  background: url("../images/banner/banner-mobile.jpg") no-repeat 50% 50% /
+  background: url("../images/banner/banner-mobile@1x.jpg") no-repeat 50% 50% /
     cover;
 }
 .banner__gradient {
@@ -47,14 +47,14 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .banner {
-    background: url("../images/banner/banner-tablet.jpg") no-repeat 50% 50% /
+    background: url("../images/banner/banner-tablet@2x.jpg") no-repeat 50% 50% /
       cover;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .banner {
-    background: url("../images/banner/banner-desktop.jpg") no-repeat 50% 50% /
+    background: url("../images/banner/banner-desktop@3x.jpg") no-repeat 50% 50% /
       cover;
     h1 {
       font-size: 44px;

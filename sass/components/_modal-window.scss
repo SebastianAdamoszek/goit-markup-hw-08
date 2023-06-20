@@ -16,7 +16,7 @@
 }
 .modal {
   position: absolute;
-  top: 50%;
+  top: 17%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 450px;
@@ -29,7 +29,6 @@
     text-align: center;
     color: var(--black-text-color);
     line-height: 1.5;
-    
   }
 }
 .title__position {
@@ -59,7 +58,6 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
-
 }
 
 .label {
@@ -67,7 +65,7 @@
   width: 370px;
   display: flex;
   flex-direction: column;
- 
+
   span {
     color: var(--gray-color);
   }
@@ -82,7 +80,7 @@
   fill: var(--gray-color);
 }
 
-textarea {  
+textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
@@ -102,7 +100,7 @@ textarea {
   justify-content: flex-start;
   margin-top: 20px;
   margin-bottom: 30px;
- 
+
   input {
     opacity: 0;
     height: 0;
@@ -149,7 +147,6 @@ textarea {
   }
 }
 .form__box {
- 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   position: relative;
@@ -195,4 +192,17 @@ textarea {
   font-size: 16px;
   line-height: 1.8;
   color: var(--white-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    top: 50%;
+    width: 528px;
+  }
+  .label {
+    width: 448px;
+  }
+  .checkbox__text {
+  font-size: 14px;  
+ }
 }
