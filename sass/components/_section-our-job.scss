@@ -1,5 +1,6 @@
-
-
+.display--adaptive {
+  display: none;
+}
 
 .our-job__background {
   position: absolute;
@@ -21,5 +22,10 @@
   position: relative;
   img {
     float: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .display--adaptive {
+    display: contents;
   }
 }
