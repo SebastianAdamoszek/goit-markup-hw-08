@@ -1,3 +1,4 @@
+@media screen and (min-width: 480px) {
 .section__portfolio__box {
   display: flex;
   // flex-wrap: wrap;
@@ -58,6 +59,8 @@ flex-direction: column;
 .card__item:focus .card--hidden {
   transform: translateY(0%);
 }
+}
+
 @media screen and (min-width: 1200px) {
 
   .section__portfolio__box {

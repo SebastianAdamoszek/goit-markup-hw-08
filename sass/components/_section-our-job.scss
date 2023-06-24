@@ -1,3 +1,4 @@
+@media screen and (min-width: 480px) {
 .display--adaptive {
   display: none;
 }
@@ -23,6 +24,7 @@
   img {
     float: left;
   }
+}
 }
 @media screen and (min-width: 1200px) {
   .display--adaptive {

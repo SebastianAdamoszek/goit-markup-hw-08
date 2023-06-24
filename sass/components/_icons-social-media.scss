@@ -1,3 +1,4 @@
+@media screen and (min-width: 480px) {
 .social-icons__box {
   display: flex;
   justify-content: center;
@@ -51,6 +52,7 @@
 .footer__social-icons__item {
   background-color: var(--gray-color);
   color: var(--white-color);
+}
 }
 
 @media screen and (min-width: 1200px) {
