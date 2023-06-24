@@ -30,4 +30,9 @@
   .display--adaptive {
     display: contents;
   }
+  .section__flex {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
 }

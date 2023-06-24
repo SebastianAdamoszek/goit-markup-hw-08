@@ -29,12 +29,22 @@
     color: var(--gray-color);
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+.our-strengths {
+  li { 
+    width: 354px;
+  }
+  h5 {
+  text-align: left;
+  }
+}
+}
 
 @media screen and (min-width: 1200px) {
 
 .our-strengths {
   li { 
-    width: auto;
+    width: 270px;
   }
   h5 {
   text-align: left;

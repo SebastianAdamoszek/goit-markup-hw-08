@@ -24,7 +24,10 @@
   color: var(--white-color);
   transition: var(--transition);
 }
-// text decoration in logo header
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  
+  // text decoration in logo header
 .logo--underline {
   position: relative;
 
@@ -33,7 +36,7 @@
     width: 0;
     height: 4px;
     position: absolute;
-    top: 59px;
+    top: 54px;
     border-radius: 2px;
     right: 0;
     background: var(--blue-color);
@@ -43,4 +46,27 @@
     width: 100%;
     left: 0;
   }
+}
+}
+@media screen and (min-width: 1200px){
+//  text decoration in logo header
+.logo--underline {
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 0;
+    height: 4px;
+    position: absolute;
+    top: 61px;
+    border-radius: 2px;
+    right: 0;
+    background: var(--blue-color);
+    transition: width 0.5s, right 0.5s;
+  }
+  &:hover::after {
+    width: 100%;
+    left: 0;
+  }
+}
 }

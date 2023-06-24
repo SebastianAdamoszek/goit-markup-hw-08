@@ -24,11 +24,12 @@ address {
 button {
   cursor: pointer;
 }
+
 @media screen and (min-width: 480px) {
   .page-wrapper {
-    min-width: 320px;
-    max-width: 480px;
-    margin: 0px auto;
+    min-width: 480px;
+    max-width: 1600px;
+    margin: 0 auto;
   }
 
   .sections__container {
@@ -57,13 +58,13 @@ button {
     transition: var(--transition);
   }
 
-  .section__flex {
+  .section__grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;
   }
 
-  .section__flex-wrap {
+  .section__grid-wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
@@ -71,17 +72,12 @@ button {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .page-wrapper {
-    min-width: 768px;
-    max-width: 1199px;
-    margin: 0px auto;
-  }
-  .section__flex {
+  .section__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
   }
-  .section__flex-wrap {
+  .section__grid-wrap {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 15px;
@@ -89,13 +85,12 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
- 
-  .section__flex {
+  .section__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
   }
-  .section__flex-wrap {
+  .section__grid-wrap {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 30px;

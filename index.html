@@ -12,58 +12,25 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.min.css"/>
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
-    <div class="">
-      <header class="header-wrapper header--box">
-        <!--start component logo -->
-        <!-- <section>
-          <a href="index.html" class="logo__link__text"
-            >
-            <div class="logo--underline">
-              <span>Web</span><span class="logo__text-black">Studio</span>
-            </div>
-            </a
-          >
-        </section> -->
-        <!-- end component logo -->
-        <!-- <nav class="nav-position">
-          <ul class="nav">
-            <li>
-              <a class="nav__link__text " href="index.html"
-                ><span class="nav__text--side-active">Agencja</span></a
-              >
-            </li>
-            <li>
-              <a class="nav__link__text" href="portfolio.html"
-                ><span class="nav__text--underline ">Portfolio</span></a
-              >
-            </li>
-            <li>
-              <a class="nav__link__text" href="#"
-                ><span class="nav__text--underline">Kontakt</span></a
-              >
-            </li>
-          </ul>
-        </nav> -->
-
-        <!-- <div class="header__contacts__wrapper">
-          <a class="header__link--color  contact--underline" href="mailto:info@devstudio.com">
-            <svg class="header__icon-envelope">
-              <use href="./images/icons.svg#icon-envelope"></use></svg
-            >info@devstudio.com</a
-          >
-            
-          <a class="header__link--color contact--underline " href="tel:+48111111111">
-            <svg class="header__icon-smartphone">
-              <use href="./images/icons.svg#icon-smartphone"></use></svg
-            >+48 111 111 111</a
-          >
-            </div>
-            <div>
-              <nav class="nav-position">
+    <div class="page-wrapper">
+      <header class="header--box">
+        <div class="header-wrapper">
+          <!--start component logo -->
+          <section>
+            <a href="index.html" class="logo__link__text">
+              <div class="logo--underline">
+                <span>Web</span><span class="logo__text-black">Studio</span>
+              </div>
+            </a>
+          </section>
+          
+          <!-- end component logo -->           
+                    
+            <nav class="nav-position">
               <ul class="nav nav__column">
                 <li>
                   <a class="nav__link__text" href="index.html"
@@ -84,12 +51,82 @@
              
             </nav>
 
-              <ul class="menu__flex">
-                <li><span class="menu__text">Instagram</span></li>
-                <li><span class="menu__text">Twitter</span></li>
-                <li><span class="menu__text">Facebook</span></li>
-                <li><span class="menu__text">Linkedin</span></li>
+            <div class="header__contacts__wrapper">
+              <a
+                class="header__link contact--underline"
+                href="mailto:info@devstudio.com"
+              >
+                <svg class="header__icon-envelope">
+                  <use href="./images/icons.svg#icon-envelope"></use></svg
+                >info@devstudio.com</a
+              >
+
+              <a
+                class="header__link contact--underline"
+                href="tel:+48111111111"
+              >
+                <svg class="header__icon-smartphone">
+                  <use href="./images/icons.svg#icon-smartphone"></use></svg
+                >+48 111 111 111</a
+              >
+            </div>
+            <button class="burger">
+              <div class="burger__hover">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                </div>
+           </button>
+            <div>
+               <div class="menu__burger">
+                <button type="button" class="btn__close">
+                <svg>
+                  <use href="./images/icons.svg#icon-close-black-18dp-2-1" />
+                </svg>
+                </button>
+                <nav class="nav-padding">
+                <ul class="nav__column">
+                  <li>
+                    <a class="nav__link__text" href="index.html"
+                      ><span class="nav__text--side-active">Agencja</span></a
+                    >
+                  </li>
+                  <li>
+                    <a class="nav__link__text" href="portfolio.html"
+                      ><span class="nav__text--underline">Portfolio</span></a
+                    >
+                  </li>
+                  <li>
+                    <a class="nav__link__text" href="#"
+                      ><span class="nav__text--underline">Kontakt</span></a
+                    >
+                  </li>
+                </ul>
+              
+              </nav>
+            <ul class="nav__column">
+              <li>
+                <a class="header__link"
+                href="mailto:info@devstudio.com">                
+                info@devstudio.com</a>
+              </li>
+              <li>
+                <a class="header__link"
+                href="tel:+48111111111">                
+                +48 111 111 111</a>
+              </li>
+            </ul>
+
+              <ul class="social-media__flex">
+                <li><span class="social-media__text">Instagram</span></li>
+                <li class="social-media__line">|</li>
+                <li><span class="social-media__text">Twitter</span></li>
+                <li class="social-media__line">|</li>
+                <li><span class="social-media__text">Facebook</span></li>
+                <li class="social-media__line">|</li>
+                <li><span class="social-media__text">Linkedin</span></li>
               </ul>
+             </div>
             </div>
           </div>
         </div>
@@ -99,10 +136,12 @@
         <section>
           <div class="banner">
             <div class="banner__gradient">
-              <h1>
-                efektywne rozwiązania dla waszego biznesu
-              </h1>
-              <button class="banner__button banner__button__text" type="button" data-modal-open>
+              <h1>efektywne rozwiązania dla waszego biznesu</h1>
+              <button
+                class="banner__button banner__button__text"
+                type="button"
+                data-modal-open
+              >
                 zamów usługę
               </button>
             </div>
@@ -110,8 +149,8 @@
         </section>
 
         <div class="sections__container">
-          <div class>
-            <ul class="section__flex section__space-top our-strengths">
+          <div>
+            <ul class="section__grid section__space-top our-strengths">
               <li>
                 <div class="our-strengths__icon">
                   <svg class="icon">
@@ -163,39 +202,57 @@
             </ul>
           </div>
 
-         <section class="display--adaptive">
+          <section class="display--adaptive">
             <div class="section__space-top section__space-bottom">
               <h2>Czym się zajmujemy</h2>
-              <ul class="section__flex ">
+              <ul class="section__flex">
                 <li class="our-job__item">
-                  <img
-                    src="images/what_we_do/box_1.jpg"
-                    alt="komputer"
-                    width="370"
-                    height="291"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/what_we_do/box_1@x2.jpg"
+                    />
+                    <img
+                      src="./images/what_we_do/box_1@x1.jpg"
+                      alt="komputer"
+                      width="370"
+                      height="291"
+                    />
+                  </picture>
                   <div class="our-job__background">
                     <p>Aplikacje komputerowe</p>
                   </div>
                 </li>
                 <li class="our-job__item">
-                  <img
-                    src="images/what_we_do/box_2.jpg"
-                    alt="smartfon"
-                    width="370"
-                    height="291"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/what_we_do/box_2@x2 x2"
+                    />
+                    <img
+                      src="./images/what_we_do/box_2@x1.jpg"
+                      alt="smartfon"
+                      width="370"
+                      height="291"
+                    />
+                  </picture>
                   <div class="our-job__background">
                     <p>Aplikacje mobilne</p>
                   </div>
                 </li>
                 <li class="our-job__item">
-                  <img
-                    src="images/what_we_do/box_3.jpg"
-                    alt="tablet"
-                    width="370"
-                    height="291"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/what_we_do/box_3@x2 x2"
+                    />
+                    <img
+                      src="./images/what_we_do/box_3@x1.jpg"
+                      alt="tablet"
+                      width="370"
+                      height="291"
+                    />
+                  </picture>
                   <div class="our-job__background">
                     <p>Rozwiązania graficzne</p>
                   </div>
@@ -209,27 +266,32 @@
           <div class="section__space-top section__space-bottom">
             <div class="sections__container">
               <h2>Nasz zespół</h2>
-              <ul class="section__flex">
+              <ul class="section__grid">
                 <li class="card__person card__person--border">
                   <picture>
-                    <source media="(max-width: 767px)"
-                           srcset="./images/our_team/mobile/person1@2x.jpg x2">
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/our_team/mobile/person1@2x.jpg x2"
+                    />
 
-                    <source media="(min-width: 768px) and  (max-width: 1199px)"
-                           srcset="./images/our_team/tablet/person1@1x.jpg,
-                                  ./images/our_team/tablet/person1@2x.jpg x2">
-                                   
-                    <source media="(min-width: 1200px)"
-                           srcset="./images/our_team/desktop/person1@1x.jpg,
-                                  ./images/our_team/desktop/person1@2x.jpg x2">
-                                         
-                  <img
-                    src="./images/our_team/mobile/person1@1x.jpg"
-                    alt="Product Designer"
-                    type="jpg"            
-                                
-                   />
-                   </picture>
+                    <source
+                      media="(min-width: 768px) and  (max-width: 1199px)"
+                      srcset="./images/our_team/tablet/person1@1x.jpg,
+                                  ./images/our_team/tablet/person1@2x.jpg x2"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/our_team/desktop/person1@1x.jpg,
+                                  ./images/our_team/desktop/person1@2x.jpg x2"
+                    />
+
+                    <img
+                      src="./images/our_team/mobile/person1@1x.jpg"
+                      alt="Product Designer"
+                      type="jpg"
+                    />
+                  </picture>
                   <p>John Doe</p>
                   <p class="card__text--color">Product Designer</p>
                   <div class="social-icons-person">
@@ -259,23 +321,29 @@
                 </li>
 
                 <li class="card__person card__person--border">
-                    <picture>
-                      <source media="(max-width: 767px)"
-                            srcset="./images/our_team/mobile/person2@2x.jpg x2">
+                  <picture>
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/our_team/mobile/person2@2x.jpg x2"
+                    />
 
-                      <source media="(min-width: 768px) and (max-width: 1199px)"
-                            srcset="./images/our_team/tablet/person2@1x.jpg,
-                                    ./images/our_team/tablet/person2@2x.jpg x2">
+                    <source
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="./images/our_team/tablet/person2@1x.jpg,
+                                    ./images/our_team/tablet/person2@2x.jpg x2"
+                    />
 
-                      <source media="(min-width: 1200px)"
-                            srcset="./images/our_team/desktop/person2@1x.jpg,
-                                    ./images/our_team/desktop/person2@2x.jpg x2">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/our_team/desktop/person2@1x.jpg,
+                                    ./images/our_team/desktop/person2@2x.jpg x2"
+                    />
                     <img
                       src="./images/our_team/mobile/person2@1x.jpg"
                       alt="Frontend Developer"
                       type="jpg"
                     />
-                    </picture>
+                  </picture>
                   <p>John Doe</p>
                   <p class="card__text--color">Frontend Developer</p>
                   <div class="social-icons-person">
@@ -306,16 +374,22 @@
 
                 <li class="card__person card__person--border">
                   <picture>
-                      <source media="(max-width: 767px)"
-                            srcset="./images/our_team/mobile/person3@2x.jpg x2">
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/our_team/mobile/person3@2x.jpg x2"
+                    />
 
-                      <source media="(min-width: 768px) and (max-width: 1199px)"
-                            srcset="./images/our_team/tablet/person3@1x.jpg,
-                                    ./images/our_team/tablet/person3@2x.jpg x2">
+                    <source
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="./images/our_team/tablet/person3@1x.jpg,
+                                    ./images/our_team/tablet/person3@2x.jpg x2"
+                    />
 
-                      <source media="(min-width: 1200px)"
-                            srcset="./images/our_team/desktop/person3@1x.jpg,
-                                    ./images/our_team/desktop/person3@2x.jpg x2">  
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/our_team/desktop/person3@1x.jpg,
+                                    ./images/our_team/desktop/person3@2x.jpg x2"
+                    />
                     <img
                       src="./images/our_team/mobile/person3@1x.jpg"
                       alt="Marketing"
@@ -351,23 +425,29 @@
                 </li>
 
                 <li class="card__person card__person--border">
-                    <picture>
-                        <source media="(max-width: 767px)"
-                              srcset="./images/our_team/mobile/person4@2x.jpg x2">
+                  <picture>
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/our_team/mobile/person4@2x.jpg x2"
+                    />
 
-                        <source media="(min-width: 768px) and (max-width: 1199px)"
-                              srcset="./images/our_team/tablet/person4@1x.jpg,
-                                      ./images/our_team/tablet/person4@2x.jpg x2">
+                    <source
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="./images/our_team/tablet/person4@1x.jpg,
+                                      ./images/our_team/tablet/person4@2x.jpg x2"
+                    />
 
-                        <source media="(min-width: 1200px)"
-                              srcset="./images/our_team/desktop/person4@1x.jpg,
-                                      ./images/our_team/desktop/person4@2x.jpg x2">  
-                      <img
-                        src="./images/our_team/mobile/person4@1x.jpg"
-                        alt="UI Designer"
-                        type="jpg"
-                      />
-                    </picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/our_team/desktop/person4@1x.jpg,
+                                      ./images/our_team/desktop/person4@2x.jpg x2"
+                    />
+                    <img
+                      src="./images/our_team/mobile/person4@1x.jpg"
+                      alt="UI Designer"
+                      type="jpg"
+                    />
+                  </picture>
                   <p>John Doe</p>
                   <p class="card__text--color">UI Designer</p>
                   <div>
@@ -399,9 +479,11 @@
             </div>
           </div>
         </section>
-        <section class="section__space-top section__space-bottom sections__container">
+        <section
+          class="section__space-top section__space-bottom sections__container"
+        >
           <h2>Nasi klienci</h2>
-          <ul class="section__flex-wrap customers">
+          <ul class="section__grid-wrap customers">
             <li class="customer__icon--border">
               <svg class="icon">
                 <use href="./images/icons.svg#icon-Logo"></use>
@@ -439,69 +521,77 @@
       <footer>
         <div class="footer--background">
           <div class="footer-wrapper">
-          <div>
-            <!-- start component logo -->
-            <section>
-              <a href="index.html" class=" logo__link__text"
-                ><span>Web</span><span class="logo__text-white">Studio</span></a
-              >
-            </section>
-            <!-- end component logo -->
-            <address class="footer__address--padding">
-              <ul>
-                <li>
-                  <a
-                    class="footer__link--color-white"
-                    href="https://goo.gl/maps/inEjP3cUXhnqV63DA"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                  >
-                    m. Warszawa, Aleje Jerozolimskie 21</a
-                  >
-                </li>
-                <li>
-                  <a class="footer__link--color-gray" href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
-                </li>
-                <li>
-                  <a class="footer__link--color-gray" href="tel:+48111111111"
-                    >+48 111 111 111</a
-                  >
-                </li>
-              </ul>
-            </address>
-          </div>
-          <section class="footer__social-icons__box">
-            <span class="footer__title">dołącz do nas</span>
+            <div>
+              <!-- start component logo -->
+              <section>
+                <a href="index.html" class="logo__link__text"
+                  ><span>Web</span
+                  ><span class="logo__text-white">Studio</span></a
+                >
+              </section>
+              <!-- end component logo -->
+              <address class="footer__address--padding">
+                <ul class="footer__address__list">
+                  <li>
+                    <a
+                      class="footer__link--color-white"
+                      href="https://goo.gl/maps/inEjP3cUXhnqV63DA"
+                      target="_blank"
+                      rel="noopener nofollow noreferrer"
+                    >
+                      m. Warszawa, Aleje Jerozolimskie 21</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="footer__link--color-gray"
+                      href="mailto:info@devstudio.com"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer__link--color-gray" href="tel:+48111111111"
+                      >+48 111 111 111</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <section class="footer__social-icons__box">
+              <span class="footer__title">dołącz do nas</span>
               <div class="social-icon__box--space">
-               <ul class="social-icons__box" >
-                <li class="social-icons__item footer__social-icons__item">
-                  <svg class="social-icons__icon icon">
-                    <use href="./images/icons.svg#icon-instagram-2"></use>
-                  </svg>
-                </li>
-                <li class="social-icons__item footer__social-icons__item">
-                  <svg class="social-icons__icon icon">
-                    <use href="./images/icons.svg#icon-twitter-1"></use>
-                  </svg>
-                </li>
-                <li class="social-icons__item footer__social-icons__item">
-                  <svg class="social-icons__icon icon">
-                    <use href="./images/icons.svg#icon-facebook-1"></use>
-                  </svg>
-                </li>
-                <li class="social-icons__item footer__social-icons__item">
-                  <svg class="social-icons__icon icon">
-                    <use href="./images/icons.svg#icon-linkedin-1"></use>
-                  </svg>
-                </li>
-               </ul>
+                <ul class="social-icons__box">
+                  <li class="social-icons__item footer__social-icons__item">
+                    <svg class="social-icons__icon icon">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </li>
+                  <li class="social-icons__item footer__social-icons__item">
+                    <svg class="social-icons__icon icon">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </li>
+                  <li class="social-icons__item footer__social-icons__item">
+                    <svg class="social-icons__icon icon">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </li>
+                  <li class="social-icons__item footer__social-icons__item">
+                    <svg class="social-icons__icon icon">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </li>
+                </ul>
               </div>
-          </section>
-          <div class="footer__newsletter__box">
-            <span class="footer__title">Zapisz się do newslettera</span>
-              <form name="signup_form" autocomplete="on" novalidate class="item__flex">
+            </section>
+            <div class="footer__newsletter__box">
+              <span class="footer__title">Zapisz się do newslettera</span>
+              <form
+                name="signup_form"
+                autocomplete="on"
+                novalidate
+                class="item__flex"
+              >
                 <label>
                   <input
                     type="email"
@@ -527,68 +617,70 @@
             <svg>
               <use href="./images/icons.svg#icon-close-black-18dp-2-1" />
             </svg>
-            </button>
-            <h2 class="title__position">
-              Zostaw swoje dane w formularzu poniżej
-            </h2>
-            <form  class="form__column" name="signup_form" autocomplete="on">
-              <label class="label">
-                <span>Imię</span>
-                <input type="text" name="name" class="form__box" />
-                <svg class="input__icon">
-                  <use href="images/icons.svg#icon-icon_person"></use>
+          </button>
+          <h2 class="title__position">
+            Zostaw swoje dane w formularzu poniżej
+          </h2>
+          <form class="form__column" name="signup_form" autocomplete="on">
+            <label class="label">
+              <span>Imię</span>
+              <input type="text" name="name" class="form__box" />
+              <svg class="input__icon">
+                <use href="images/icons.svg#icon-icon_person"></use>
+              </svg>
+            </label>
+            <label class="label">
+              <span>Telefon</span>
+              <input type="tel" name="phone_number" class="form__box" />
+              <svg class="input__icon">
+                <use href="images/icons.svg#icon-icon_tel"></use>
+              </svg>
+            </label>
+            <label class="label">
+              <span>E-mail</span>
+              <input type="email" name="email" class="form__box" />
+              <svg class="input__icon">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+            </label>
+            <label class="label">
+              <span>Komentarz</span>
+              <textarea
+                class="form__textarea"
+                name="feedback"
+                rows="6"
+                placeholder="Wprowadź tekst"
+              ></textarea>
+            </label>
+            <label class="checkbox">
+              <span class="checkbox__text"
+                >Oświadczam iż akceptuję
+                <a href="#" class="checkbox__link">Regulamin</a> i
+                <a href="#" class="checkbox__link"
+                  >Politykę Prywatności</a
+                ></span
+              >
+              <input
+                type="checkbox"
+                name="statute"
+                value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności."
+              />
+              <span class="checkmark">
+                <svg class="checkbox__icon">
+                  <use href="./images/icons.svg#icon-icon-check"></use>
                 </svg>
-              </label>
-              <label class="label">
-                <span>Telefon</span>
-                <input type="tel" name="phone_number" class="form__box" />
-                <svg class="input__icon">
-                  <use href="images/icons.svg#icon-icon_tel"></use>
-                </svg>
-              </label>
-              <label class="label">
-                <span>E-mail</span>
-                <input type="email" name="email" class="form__box" />
-                <svg class="input__icon">
-                  <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
-                </svg>
-              </label>
-              <label class="label">
-                <span>Komentarz</span>
-                <textarea
-                  class="form__textarea"
-                  name="feedback"
-                  rows="6"
-                  placeholder="Wprowadź tekst"
-                ></textarea>
-              </label>
-              <label class="checkbox">                
-                <span class="checkbox__text"
-                  >Oświadczam iż akceptuję
-                  <a href="#" class="checkbox__link">Regulamin</a> i
-                  <a href="#" class="checkbox__link"
-                    >Politykę Prywatności</a
-                  ></span
-                >
-                <input
-                  type="checkbox"
-                  name="statute"
-                  value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności."
-                />
-                <span class="checkmark">
-                  <svg class="checkbox__icon">
-                    <use href="./images/icons.svg#icon-icon-check"></use>
-                  </svg>
-                </span>
-              </label>
-              <div class="modal__button__position">
-                <button type="submit" class="modal__button modal__button__text">wyślij</button>
-              </div>
-            </form>          
+              </span>
+            </label>
+            <div class="modal__button__position">
+              <button type="submit" class="modal__button modal__button__text">
+                wyślij
+              </button>
+            </div>
+          </form>
         </div>
       </div>
-    </div>  
-        <script src="./js/modal.js"></script>
-        <script defer src="js/mobile-menu.js"></script>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
