@@ -3,15 +3,17 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .banner {
-    text-align: center;
-    background: var(--dark-color);
+    
     background: url("../images/banner/banner-mobile@x1.jpg") no-repeat 50% 50% /
         cover,
       url("../images/banner/banner-mobile@x2.jpg x2") no-repeat 50% 50% / cover;
+    
   }
   .banner__gradient {
+    background: var(--blue-color);
     background-color: var(--banner-background);
     padding: 115px 0;
+    text-align: center;
 
     h1 {
       font-weight: 900;

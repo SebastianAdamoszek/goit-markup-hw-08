@@ -26,7 +26,8 @@ button {
 }
 @media screen and (min-width: 480px) {
   .page-wrapper {
-    width: 480px;
+    min-width: 320px;
+    max-width: 480px;
     margin: 0px auto;
   }
 
@@ -88,6 +89,7 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
+ 
   .section__flex {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
