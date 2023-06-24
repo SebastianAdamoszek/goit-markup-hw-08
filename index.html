@@ -182,20 +182,22 @@
                 <li class="card__person card__person--border">
                   <picture>
                     <source media="(min-width: 480px)"
-                           srcset="./images/our_team/mobile/person1@2x.jpg 2x">
+                           srcset="./images/our_team/mobile/person1@2x.jpg x2">
 
-                    <source media="(min-width: 768px)" width="354" height="374"
-                           srcset="./images/our_team/tablet/person1@1x.jpg x1,
+                    <source media="(min-width: 768px)"
+                           srcset="./images/our_team/tablet/person1@1x.jpg,
                                   ./images/our_team/tablet/person1@2x.jpg x2">
-
-                    <source media="(min-width: 1200px)" width="270" height="260"
+                                   
+                    <source media="(min-width: 1200px)"
                            srcset="./images/our_team/desktop/person1@1x.jpg x1,
-                                  ./images/our_team/desktop/person1@2x.jpg x2">        
+                                  ./images/our_team/desktop/person1@2x.jpg x2">
+                                         
                   <img
                     src="./images/our_team/mobile/person1@1x.jpg"
                     alt="Product Designer"
-                    width="450"
-                    height="460"
+                      
+                 
+                    
                             />
                    </picture>
                   <p>John Doe</p>
@@ -229,20 +231,19 @@
                 <li class="card__person card__person--border">
                     <picture>
                       <source media="(min-width: 480px)"
-                            srcset="./images/our_team/mobile/person2@2x.jpg 2x">
+                            srcset="./images/our_team/mobile/person2@2x.jpg x2">
 
-                      <source media="(min-width: 768px)" width="354" height="374"
-                            srcset="./images/our_team/tablet/person2@1x.jpg x1,
+                      <source media="(min-width: 768px)"
+                            srcset="./images/our_team/tablet/person2@1x.jpg,
                                     ./images/our_team/tablet/person2@2x.jpg x2">
 
-                      <source media="(min-width: 1200px)" width="270" height="260"
-                            srcset="./images/our_team/desktop/person2@1x.jpg x1,
+                      <source media="(min-width: 1200px)"
+                            srcset="./images/our_team/desktop/person2@1x.jpg,
                                     ./images/our_team/desktop/person2@2x.jpg x2">
                     <img
                       src="./images/our_team/mobile/person2@1x.jpg"
                       alt="Frontend Developer"
-                      width="450"
-                      height="460"
+                      
                     />
                     </picture>
                   <p>John Doe</p>
@@ -276,20 +277,19 @@
                 <li class="card__person card__person--border">
                   <picture>
                       <source media="(min-width: 480px)"
-                            srcset="./images/our_team/mobile/person3@2x.jpg 2x">
+                            srcset="./images/our_team/mobile/person3@2x.jpg x2">
 
-                      <source media="(min-width: 768px)" width="354" height="374"
-                            srcset="./images/our_team/tablet/person3@1x.jpg x1,
+                      <source media="(min-width: 768px)"
+                            srcset="./images/our_team/tablet/person3@1x.jpg,
                                     ./images/our_team/tablet/person3@2x.jpg x2">
 
-                      <source media="(min-width: 1200px)" width="270" height="260"
-                            srcset="./images/our_team/desktop/person3@1x.jpg x1,
+                      <source media="(min-width: 1200px)"
+                            srcset="./images/our_team/desktop/person3@1x.jpg,
                                     ./images/our_team/desktop/person3@2x.jpg x2">  
                     <img
                       src="./images/our_team/mobile/person3@1x.jpg"
                       alt="Marketing"
-                      width="450"
-                      height="460"
+                      
                     />
                   </picture>
                   <p>John Doe</p>
@@ -323,20 +323,19 @@
                 <li class="card__person card__person--border">
                     <picture>
                         <source media="(min-width: 480px)"
-                              srcset="./images/our_team/mobile/person4@2x.jpg 2x">
+                              srcset="./images/our_team/mobile/person4@2x.jpg x2">
 
-                        <source media="(min-width: 768px)" width="354" height="374"
-                              srcset="./images/our_team/tablet/person4@1x.jpg x1,
+                        <source media="(min-width: 768px)"
+                              srcset="./images/our_team/tablet/person4@1x.jpg,
                                       ./images/our_team/tablet/person4@2x.jpg x2">
 
-                        <source media="(min-width: 1200px)" width="270" height="260"
-                              srcset="./images/our_team/desktop/person4@1x.jpg x1,
+                        <source media="(min-width: 1200px)"
+                              srcset="./images/our_team/desktop/person4@1x.jpg,
                                       ./images/our_team/desktop/person4@2x.jpg x2">  
                       <img
                         src="./images/our_team/mobile/person4@1x.jpg"
                         alt="UI Designer"
-                        width="450"
-                        height="460"
+                       
                       />
                     </picture>
                   <p>John Doe</p>
@@ -469,7 +468,7 @@
                </ul>
               </div>
           </section>
-          <section class="footer__newsletter__box">
+          <div class="footer__newsletter__box">
             <span class="footer__title">Zapisz się do newslettera</span>
             <form name="signup_form" autocomplete="on" novalidate class="item__flex">
               <label>
@@ -487,7 +486,7 @@
                 </svg>
               </button>
             </form>
-          </section>
+          </div>
         </div>
       </footer>
       <div class="backdrop is-hidden" data-modal>
@@ -553,11 +552,10 @@
               <div class="modal__button__position">
                 <button type="submit" class="modal__button modal__button__text">wyślij</button>
               </div>
-            </form>
-          </button>
+            </form>          
         </div>
       </div>
-    </div>
+
     <script src="./js/modal.js"></script>
     <script defer src="js/mobile-menu.js"></script>
   </body>
