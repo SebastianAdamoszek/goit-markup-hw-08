@@ -88,12 +88,7 @@ button {
 
 @media screen and (min-width: 1200px) {
   
-  .page-wrapper {
-    min-width: 1200px;
-    width: 1600px;
-    margin: 0px auto;
-  }
-
+  
   .section__flex {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

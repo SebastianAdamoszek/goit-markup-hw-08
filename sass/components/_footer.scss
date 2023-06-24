@@ -1,6 +1,10 @@
 .footer-wrapper {
   display: grid;
   grid-template-columns: 1fr;
+  align-self: center;
+  justify-self: center;
+  margin:  0 auto;
+ 
   gap: 30px;
   padding-top: 60px;
 
@@ -15,7 +19,9 @@
   .footer-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+    justify-items: center;
+    align-items: center;
+       
   }
 }
 
@@ -24,10 +30,12 @@
 }
 @media screen and (min-width: 1200px) {
   .footer-wrapper {
-    display: grid;
-    align-items: center;
+    width: 1200px;
+    display: grid;    
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 60px 200px 60px 200px;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 60px;
 
     div {
       align-items: flex-start;
