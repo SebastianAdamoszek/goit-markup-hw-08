@@ -1,4 +1,4 @@
-@media screen and (min-width: 480px) {
+
    .header__contacts__wrapper {
     display: none;
   }
@@ -19,6 +19,7 @@
 }
  .footer__address__list {
     text-align: center;
+    font-size: 14px;
   }
 
 .footer__link--color-white {
@@ -29,7 +30,7 @@
   color: var(--light-gray-text-color);
   line-height: 2.2;
 }
-}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header__contacts__wrapper {
     display: flex;
@@ -37,7 +38,7 @@
     align-items: flex-start;
   }
   .header__link {
-    font-size: 16px;
+    font-size: 14px;
   }
   .header__icon-envelope {
   width: 16px;
@@ -63,7 +64,7 @@
       width: 0;
       height: 4px;
       position: absolute;
-      top: 27px;
+      top: 21px;
       right: 0;
       border-radius: 2px;
       background: var(--blue-color);

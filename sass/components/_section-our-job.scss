@@ -1,8 +1,7 @@
-@media screen and (min-width: 480px) {
+
 .display--adaptive {
   display: none;
 }
-
 .our-job__background {
   position: absolute;
   color: var(--white-color);
@@ -25,7 +24,7 @@
     float: left;
   }
 }
-}
+
 @media screen and (min-width: 1200px) {
   .display--adaptive {
     display: contents;

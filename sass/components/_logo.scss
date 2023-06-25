@@ -1,23 +1,19 @@
 .logo__link__text {
-    
   font-family: "raleway", sans-serif;
   color: var(--blue-color);
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.6;
-  
 
   &:hover .logo__text-white,
   &:hover .logo__text-black {
-   
     color: var(--blue-color);
-    
   }
 }
 
 // logo color in header
 .logo__text-black {
   color: var(--logo-black-color);
-   transition: var(--transition);
+  transition: var(--transition);
 }
 // logo color in footer
 .logo__text-white {
@@ -26,47 +22,49 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  
   // text decoration in logo header
-.logo--underline {
-  position: relative;
+  .logo--underline {
+    position: relative;
 
-  &::after {
-    content: "";
-    width: 0;
-    height: 4px;
-    position: absolute;
-    top: 54px;
-    border-radius: 2px;
-    right: 0;
-    background: var(--blue-color);
-    transition: width 0.5s, right 0.5s;
-  }
-  &:hover::after {
-    width: 100%;
-    left: 0;
+    &::after {
+      content: "";
+      width: 0;
+      height: 4px;
+      position: absolute;
+      top: 49px;
+      border-radius: 2px;
+      right: 0;
+      background: var(--blue-color);
+      transition: width 0.5s, right 0.5s;
+    }
+    &:hover::after {
+      width: 100%;
+      left: 0;
+    }
   }
 }
-}
-@media screen and (min-width: 1200px){
-//  text decoration in logo header
-.logo--underline {
-  position: relative;
+@media screen and (min-width: 1200px) {
+  .logo__link__text {
+    font-size: 26px;
+  }
+  //  text decoration in logo header
+  .logo--underline {
+    position: relative;
 
-  &::after {
-    content: "";
-    width: 0;
-    height: 4px;
-    position: absolute;
-    top: 61px;
-    border-radius: 2px;
-    right: 0;
-    background: var(--blue-color);
-    transition: width 0.5s, right 0.5s;
+    &::after {
+      content: "";
+      width: 0;
+      height: 4px;
+      position: absolute;
+      top: 60px;
+      border-radius: 2px;
+      right: 0;
+      background: var(--blue-color);
+      transition: width 0.5s, right 0.5s;
+    }
+    &:hover::after {
+      width: 100%;
+      left: 0;
+    }
   }
-  &:hover::after {
-    width: 100%;
-    left: 0;
-  }
-}
 }

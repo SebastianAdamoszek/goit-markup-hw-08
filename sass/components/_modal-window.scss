@@ -1,4 +1,4 @@
-@media screen and (min-width: 480px) {
+
 .backdrop {
   position: fixed;
   left: 0;
@@ -17,9 +17,9 @@
 }
 .modal {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
-  transform: translate(-25%, -25%);
+  transform: translate(-50%, -50%);
   width: 450px;
   height: auto;
   background-color: var(--white-color);
@@ -194,16 +194,18 @@ textarea {
   line-height: 1.8;
   color: var(--white-color);
 }
-}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .modal {
-     transform: translate(-30%, -30%);
+    top: 39%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
      width: 528px;
+     top: 40%;
+     
   }
   .label {
     width: 448px;
