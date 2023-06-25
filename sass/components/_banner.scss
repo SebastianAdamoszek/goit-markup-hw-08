@@ -1,14 +1,26 @@
-@media screen and (min-width: 480px),
-                  (min-device-pixel-ratio: 2)
+@media screen and (min-width: 480px)
+              and (min-device-pixel-ratio: 2)
               and (-webkit-min-device-pixel-ratio: 2)
               and (min-resolution: 192dpi)
               and (min-resolution: 2dppx) {
   .banner {
-    background: url("../images/banner/banner-mobile@x1.jpg") no-repeat 50% 50% /
-        cover,
-      url("../images/banner/banner-mobile@x2.jpg x2") no-repeat 50% 50% / cover;
+         max-width: 100%;
+         height: auto;
+         object-fit: cover;
+         background: url("../images/banner/banner-mobile@x2.jpg x2") no-repeat 50% 50% / cover;
+         
   }
-  .banner__gradient {
+}
+@media screen and (min-width: 480px) {
+  .banner {    
+       max-width: 100%;
+       height: auto;
+       object-fit: cover;
+       background: url("../images/banner/banner-mobile@x1.jpg") no-repeat 50% 50% /
+        cover;
+        
+  
+  &__gradient {
     background: var(--blue-color);
     background-color: var(--banner-background);
     padding: 110px 0;
@@ -25,6 +37,7 @@
       margin: 0 auto;
       text-align: center;
     }
+   }
   }
 
   .banner__button {
@@ -54,35 +67,45 @@
 }
 
 @media screen and (min-width: 768px)
-              and (max-width: 1199px),
-                  (min-device-pixel-ratio: 2)
+              and (max-width: 1199px)
+              and (min-device-pixel-ratio: 2)
               and (-webkit-min-device-pixel-ratio: 2)
               and (min-resolution: 192dpi)
               and (min-resolution: 2dppx) {
   .banner {
-    background: url("../images/banner/banner-tablet@x1.jpg") no-repeat 50% 50% /
-        cover,
-      url("../images/banner/banner-tablet@x2.jpg x2") no-repeat 50% 50% / cover;
+    background: url("../images/banner/banner-tablet@x2.jpg x2") no-repeat 50% 50% / cover;
   }
 }
+@media screen and (min-width: 768px)
+              and (max-width: 1199px) {
+.banner {
+    background: url("../images/banner/banner-tablet@x1.jpg") no-repeat 50% 50% /
+        cover,
+  }
+ }
 
-@media screen and (min-width: 1200px),
-                  (min-device-pixel-ratio: 2) 
+@media screen and (min-width: 1200px)
+              and (min-device-pixel-ratio: 2) 
               and (-webkit-min-device-pixel-ratio: 2) 
               and (min-resolution: 192dpi) 
               and (min-resolution: 2dppx) {
   .banner {
-    background: url("../images/banner/banner-desktop@x1.jpg") no-repeat 50% 50% /
-        cover,
-      url("../images/banner/banner-desktop@x2.jpg x2") no-repeat 50% 50% / cover;
+    background: url("../images/banner/banner-desktop@x2.jpg x2") no-repeat 50% 50% / cover;
   }
-  .banner__gradient {
+}
+@media screen and (min-width: 1200px) {
+  .banner {
+    background: url("../images/banner/banner-desktop@x1.jpg") no-repeat 50% 50% /
+        cover;
+  
+  &__gradient {
     padding: 200px 0;
 
     h1 {
       font-size: 44px;
       line-height: 1.36;
       width: 617px;
+      } 
     }
   }
 }
