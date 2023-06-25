@@ -1,11 +1,11 @@
-@media screen and (min-width: 10px),
-  screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+@media screen and (min-width: 480px),
+               (min-device-pixel-ratio: 2),
+               (-webkit-min-device-pixel-ratio: 2),
+               (min-resolution: 192dpi),
+               (min-resolution: 2dppx) {
   .banner {
-    background: url("../images/banner/banner-mobile@x1.jpg") no-repeat 50% 50% /
-        cover,
-      url("../images/banner/banner-mobile@x2.jpg x2") no-repeat 50% 50% / cover;
+    background: url("../images/banner/banner-mobile@x1.jpg") no-repeat 50% 50% / cover,
+               url("../images/banner/banner-mobile@x2.jpg x2") no-repeat 50% 50% / cover;
   }
   .banner__gradient {
     background: var(--blue-color);
@@ -53,9 +53,10 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px),
-  screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+              (min-device-pixel-ratio: 2),
+              (-webkit-min-device-pixel-ratio: 2),
+              (min-resolution: 192dpi),
+              (min-resolution: 2dppx) {
   .banner {
     background: url("../images/banner/banner-tablet@x1.jpg") no-repeat 50% 50% /
         cover,
@@ -64,9 +65,10 @@
 }
 
 @media screen and (min-width: 1200px),
-  screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+              (min-device-pixel-ratio: 2),
+              (-webkit-min-device-pixel-ratio: 2),
+              (min-resolution: 192dpi),
+              (min-resolution: 2dppx) {
   .banner {
     background: url("../images/banner/banner-desktop@x1.jpg") no-repeat 50% 50% /
         cover,
@@ -76,9 +78,9 @@
       padding: 200px 0;
 
       h1 {
-        // font-size: 44px;
-        // line-height: 1.36;
-        // width: 617px;
+        font-size: 44px;
+        line-height: 1.36;
+        width: 617px;
       }
     }
   }
