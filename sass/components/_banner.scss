@@ -1,4 +1,4 @@
-@media screen and (min-width: 0px),
+@media screen and (min-width: 10px),
   screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
@@ -76,9 +76,9 @@
       padding: 200px 0;
 
       h1 {
-        font-size: 44px;
-        line-height: 1.36;
-        width: 617px;
+        // font-size: 44px;
+        // line-height: 1.36;
+        // width: 617px;
       }
     }
   }

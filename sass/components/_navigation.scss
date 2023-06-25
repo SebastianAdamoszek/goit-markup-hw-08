@@ -1,98 +1,99 @@
-@media screen and (min-width: 0px) {
-  .nav {
-    display: none;
-  }
-  .burger {
-    position: relative;
-    border: none;
-    background: transparent;
-    outline: none;
-    cursor: pointer;   
-       
+.nav__tablet-desktop {
+  display: none;
 }
- .burger__hover:hover  div {
-    background: var(--blue-color);
-   }
+.burger {
+  position: relative;
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
+.burger__hover:hover div {
+  background: var(--blue-color);
+}
 
-  .line {
-    width: 3rem;
-    height: .3rem;
-    background: var(--logo-black-color);
-    margin: .4rem;
-    border-radius: 20%;
-   
-    
-  }
-  .is-open {
-    transform: translate(0%);
-  }
+.line {
+  width: 3rem;
+  height: 0.3rem;
+  background: var(--logo-black-color);
+  margin: 0.4rem;
+  border-radius: 20%;
+}
+// .menu__center {
+//   margin: 0 auto;
+//   position: absolute;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+.is-open {
+  transform: translate(0%);
+}
 
-  .menu__burger { display: none;
-    position: absolute;
-    // display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 32px;
-    background-color: var(--white-color);
-    padding: 48px 0px 48px 40px;
-    width: 100%;
-    left: 0;
-    top: 0;
-    transform: translate(100%);
-       
-    }
-    .btn__close {
-      position: absolute;
-      right: 10px;
-      top: 15px;
-      background-color: var(--white-color);
-      border: none;
-      cursor: pointer;
-      transition: var(--transition);
+.menu__burger {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+  background-color: var(--white-color);
+  padding: 48px 0px 48px 40px;
+  width: 480px;
+  top: 0;
+  left: 0;
+  transform: translate(100%);
+}
+.btn__close {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  background-color: var(--white-color);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
 
-       &:focus,
-       &:hover {
-        color: var(--blue-color);        
-    }
-      svg {
-        margin-top: 4px;
-        width: 44px;
-        height: 44px;
-        fill: currentColor;
-    }
-    
-  }
- 
-  .nav-padding {
-    padding-bottom: 302px;
-  }
-  .nav__link__text {
-    font-weight: 500;
-    font-size: 40px;
-    color: var(--black-text-color);
-    transition: var(--transition);
-  }
-    
-  .social-media__flex {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-    padding-top: 64px;
-  }
-  .social-media__text {
-    font-size: 18px;
+  &:focus,
+  &:hover {
     color: var(--blue-color);
   }
-  .social-media__line {
-    font-size: 22px;
-    color: var(--black-text-color);
-    opacity: 20%;
+  svg {
+    margin-top: 4px;
+    width: 44px;
+    height: 44px;
+    fill: currentColor;
   }
+}
+
+.nav-padding {
+  padding-bottom: 302px;
+}
+.nav__link__text {
+  font-weight: 500;
+  font-size: 40px;
+  color: var(--black-text-color);
+  transition: var(--transition);
+}
+
+.social-media__flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding-top: 64px;
+}
+.social-media__text {
+  font-size: 18px;
+  color: var(--blue-color);
+}
+.social-media__line {
+  font-size: 22px;
+  color: var(--black-text-color);
+  opacity: 20%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .burger, .menu__burger {
+  .burger,
+  .menu__burger {
     display: none;
   }
   .header__contacts__wrapper {
@@ -100,7 +101,7 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  .nav {
+  .nav__tablet-desktop {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -123,7 +124,7 @@
     color: var(--black-text-color);
     transition: var(--transition);
   }
-   //  header text decoration
+  //  header text decoration
 
   .nav__text--underline {
     position: relative;
@@ -148,7 +149,8 @@
 }
 
 @media screen and (min-width: 1200px) {
-   .burger, .menu__burger {
+  .burger,
+  .menu__burger {
     display: none;
   }
   .nav__column {
@@ -157,7 +159,7 @@
   .nav-position {
     padding-right: 220px;
   }
-  .nav {
+  .nav__tablet-desktop {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -169,7 +171,7 @@
     position: relative;
     width: 100%;
     height: 4px;
-    top: 22px;
+    top: 21px;
     border-radius: 2px;
     background: var(--blue-color);
     transition: var(--transition);
@@ -195,7 +197,7 @@
     width: 0;
     height: 4px;
     position: absolute;
-    top: 44px;
+    top: 43px;
     right: 0;
     border-radius: 2px;
     background: var(--blue-color);
