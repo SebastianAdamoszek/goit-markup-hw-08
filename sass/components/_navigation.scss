@@ -8,7 +8,7 @@
     background: transparent;
     outline: none;
     cursor: pointer;   
-   
+       
 }
  .burger__hover:hover  div {
     background: var(--blue-color);
@@ -39,8 +39,7 @@
     left: 0;
     top: 0;
     transform: translate(100%);
-    overflow: hidden;
-    
+       
     }
     .btn__close {
       position: absolute;
@@ -149,7 +148,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-   .burger {
+   .burger, .menu__burger {
     display: none;
   }
   .nav__column {

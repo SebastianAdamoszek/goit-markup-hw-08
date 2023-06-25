@@ -19,7 +19,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-25%, -25%);
   width: 450px;
   height: auto;
   background-color: var(--white-color);
@@ -195,11 +195,15 @@ textarea {
   color: var(--white-color);
 }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal {
+     transform: translate(-30%, -30%);
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .modal {
-    top: 50%;
-    width: 528px;
+     width: 528px;
   }
   .label {
     width: 448px;
