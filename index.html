@@ -75,7 +75,11 @@
            <!-- end menu tablet-desktop -->
 
            <!-- start button only mobile -->
-            <button class="burger">
+            <button type="button" 
+                    class="burger__btn js-open-menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                  >
               <div class="burger__hover">
                 <div class="line"></div>
                 <div class="line"></div>
@@ -83,60 +87,7 @@
                 </div>
            </button>
            <!-- end button only mobile -->
-
-           <!-- start menu only mobile -->
-            <div>
-               <div class="menu__burger">
-                <button type="button" class="btn__close">
-                <svg>
-                  <use href="./images/icons.svg#icon-close-black-18dp-2-1" />
-                </svg>
-                </button>
-                <nav class="nav-padding">
-                <ul class="nav__column">
-                  <li>
-                    <a class="nav__link__text" href="index.html"
-                      ><span class="nav__text--side-active">Agencja</span></a
-                    >
-                  </li>
-                  <li>
-                    <a class="nav__link__text" href="portfolio.html"
-                      ><span class="nav__text--underline">Portfolio</span></a
-                    >
-                  </li>
-                  <li>
-                    <a class="nav__link__text" href="#"
-                      ><span class="nav__text--underline">Kontakt</span></a
-                    >
-                  </li>
-                </ul>
-              
-              </nav>
-            <ul class="nav__column">
-              <li>
-                <a class="header__link"
-                href="mailto:info@devstudio.com">                
-                info@devstudio.com</a>
-              </li>
-              <li>
-                <a class="header__link"
-                href="tel:+48111111111">                
-                +48 111 111 111</a>
-              </li>
-            </ul>
-
-              <ul class="social-media__flex">
-                <li><span class="social-media__text">Instagram</span></li>
-                <li class="social-media__line">|</li>
-                <li><span class="social-media__text">Twitter</span></li>
-                <li class="social-media__line">|</li>
-                <li><span class="social-media__text">Facebook</span></li>
-                <li class="social-media__line">|</li>
-                <li><span class="social-media__text">Linkedin</span></li>
-              </ul>
-             </div>
-            </div>
-            <!-- end menu only mobile -->
+         
           </div>
         </div>
       </header>
@@ -620,6 +571,60 @@
           </div>
         </div>
       </footer>
+        <!-- start menu only mobile -->
+            <div>
+               <div class="menu__mobile js-menu-container" id="mobile-menu">
+                <button type="button" class="btn__close js-close-menu">
+                <svg>
+                  <use href="./images/icons.svg#icon-close-black-18dp-2-1" />
+                </svg>
+                </button>
+                <nav class="nav-padding">
+                <ul class="nav__column">
+                  <li>
+                    <a class="nav__link__text" href="index.html"
+                      ><span class="nav__text--side-active">Agencja</span></a
+                    >
+                  </li>
+                  <li>
+                    <a class="nav__link__text" href="portfolio.html"
+                      ><span class="nav__text--underline">Portfolio</span></a
+                    >
+                  </li>
+                  <li>
+                    <a class="nav__link__text" href="#"
+                      ><span class="nav__text--underline">Kontakt</span></a
+                    >
+                  </li>
+                </ul>
+              
+              </nav>
+            <ul class="nav__column">
+              <li>
+                <a class="header__link"
+                href="mailto:info@devstudio.com">                
+                info@devstudio.com</a>
+              </li>
+              <li>
+                <a class="header__link"
+                href="tel:+48111111111">                
+                +48 111 111 111</a>
+              </li>
+            </ul>
+
+              <ul class="social-media__flex">
+                <li><span class="social-media__text">Instagram</span></li>
+                <li class="social-media__line">|</li>
+                <li><span class="social-media__text">Twitter</span></li>
+                <li class="social-media__line">|</li>
+                <li><span class="social-media__text">Facebook</span></li>
+                <li class="social-media__line">|</li>
+                <li><span class="social-media__text">Linkedin</span></li>
+              </ul>
+             </div>
+            </div>
+            <!-- end menu only mobile -->
+           <!-- start window modal -->
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button type="button" class="close-button" data-modal-close>
@@ -688,8 +693,10 @@
           </form>
         </div>
       </div>
+      <!-- end window modal -->
     </div>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
-    <script defer src="js/mobile-menu.js"></script>
+    
   </body>
 </html>

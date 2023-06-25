@@ -1,0 +1,84 @@
+// menu only mobile max-with 767px
+.burger__btn {
+  
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.burger__hover:hover div {
+  background: var(--blue-color);
+}
+
+.line {
+  width: 3rem;
+  height: 0.3rem;
+  background: var(--logo-black-color);
+  margin: 0.4rem;
+  border-radius: 30%;
+}
+
+.menu__mobile .is-open {
+  transform: translateX(0%);
+}
+.menu__mobile {
+  position: fixed;  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+  background-color: var(--white-color);
+  padding: 48px 0px 48px 40px;
+  width: 480px;  
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+.btn__close {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  background-color: var(--white-color);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+
+  &:focus,
+  &:hover {
+    color: var(--blue-color);
+  }
+  svg {
+    margin-top: 4px;
+    width: 44px;
+    height: 44px;
+    fill: currentColor;
+  }
+}
+.nav-padding {
+  padding-bottom: 302px;
+}
+.nav__link__text {
+  font-weight: 500;
+  font-size: 40px;
+  color: var(--black-text-color);
+  transition: var(--transition);
+}
+
+.social-media__flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding-top: 64px;
+}
+.social-media__text {
+  font-size: 18px;
+  color: var(--blue-color);
+}
+.social-media__line {
+  font-size: 22px;
+  color: var(--black-text-color);
+  opacity: 20%;
+}
