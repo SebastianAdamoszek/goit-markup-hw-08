@@ -2,7 +2,7 @@
   font-family: "raleway", sans-serif;
   color: var(--blue-color);
   font-size: 24px;
-  line-height: 1.6;
+  line-height: 0;
 
   &:hover .logo__text-white,
   &:hover .logo__text-black {
@@ -31,7 +31,7 @@
       width: 0;
       height: 4px;
       position: absolute;
-      top: 50px;
+      top: 37px;
       border-radius: 2px;
       right: 0;
       background: var(--blue-color);
@@ -56,7 +56,7 @@
       width: 0;
       height: 4px;
       position: absolute;
-      top: 60px;
+      top: 37px;
       border-radius: 2px;
       right: 0;
       background: var(--blue-color);

@@ -4,8 +4,6 @@
   }
 
 
-
-
 // footer contacts links
 
 .footer__address--padding {
@@ -25,14 +23,17 @@
   line-height: 2.2;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .header__contacts__wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 10px;
+    padding: 21px 0;
   }
   .header__link {
     font-size: 14px;
+    line-height: 0;
   }
   .header__icon-envelope {
   width: 16px;
@@ -58,7 +59,7 @@
       width: 0;
       height: 4px;
       position: absolute;
-      top: 21px;
+      top: 16px;
       right: 0;
       border-radius: 2px;
       background: var(--blue-color);
@@ -73,16 +74,19 @@
 
 @media screen and (min-width: 1200px) {
   .header__contacts__wrapper {
-    display: flex;
+    // display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
+    padding: 32px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
   }
-   .footer__address__list {
-    text-align: left;
-  }
+  
   .header__link {
   font-size: 16px;
+  
   }
   .header__icon-envelope {
   width: 16px;
@@ -97,6 +101,9 @@
   margin-right: 10px;
   fill: currentColor;
 }
+ .footer__address__list {
+    text-align: left;
+  }
 
   // header text decoration
 
@@ -108,7 +115,7 @@
       width: 0;
       height: 4px;
       position: absolute;
-      top: 50px;
+      top: 45px;
       right: 0;
       border-radius: 2px;
       background: var(--blue-color);

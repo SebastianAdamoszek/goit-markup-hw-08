@@ -5,11 +5,12 @@
   background-color: var(--white-color);
 
 
-  p {
+  .card__text {
     font-weight: 500;
     text-align: center;
     letter-spacing: 0.03em;
     padding-top: 30px;
+    padding-bottom: 10px;
   }
 }
 .card__person--border {
@@ -23,6 +24,10 @@
 .card__text--color {
   color: var(--gray-color);
   }
+}
+.our-team__wrapper--background {
+  background: var(--bg-team-white-color); 
+  
 }
 
 // the icons in this card are in component icons-social-media
