@@ -7,6 +7,12 @@
   .menu__mobile {
     display: none;
   }
+ .nav-position {
+    display: flex; 
+    align-items: center;
+    justify-content:center;
+    gap: 100px;
+  }
  
   .nav__tablet-desktop {
     display: flex;
@@ -65,7 +71,12 @@
   .nav__column {
     display: none;
   }
-  
+  .nav-position {
+      gap: 275px;
+  }
+  .nav__tablet-desktop {
+    gap: 60px;
+  }
   
   .nav__text--side-active:after {
     display: block;

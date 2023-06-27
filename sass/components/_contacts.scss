@@ -74,14 +74,12 @@
 
 @media screen and (min-width: 1200px) {
   .header__contacts__wrapper {
-    // display: flex;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 50px;
-    padding: 32px 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    
+    padding: 32px 0;    
   }
   
   .header__link {

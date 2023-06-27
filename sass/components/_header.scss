@@ -1,27 +1,22 @@
 
   .header-wrapper {
     display: flex;
-    justify-content: space-between;    
-    align-items:center;
-    
+    justify-content:space-between;    
+    align-items: center;    
     margin: 0 auto;
+    padding: 0 15px;
   }
   .header--box {
     border-bottom: 1px solid var(--line-main-color);
   }
 
 @media screen and (min-width: 768px) {
-  .header-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
-    max-width: 768px;
-    
+  .header-wrapper { 
+    max-width: 768px;   
   }
 }
 @media screen and (min-width: 1200px) {
   .header-wrapper {
-    max-width: 1200px;
-        
+    max-width: 1200px;    
   }
 }

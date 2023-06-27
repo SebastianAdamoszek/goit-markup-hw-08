@@ -31,8 +31,8 @@
           <!-- end component logo -->    
           
           <!-- start menu tablet-desktop -->
-          
-            <nav class="nav-position">
+            <div class="nav-position">
+            <nav>
               <ul class="nav__tablet-desktop">
                 <li>
                   <a class="nav__link__text" href="index.html"
@@ -71,7 +71,8 @@
                   <use href="./images/icons.svg#icon-smartphone"></use></svg
                 >+48 111 111 111</a
               >
-            </div>               
+            </div> 
+           </div>               
            <!-- end menu tablet-desktop -->
 
            <!-- start button only mobile -->
@@ -89,9 +90,8 @@
            <!-- end button only mobile -->
          
           </div>
-        </div>
-      </header>
-
+        </header>
+      </div>
       <main>
         <section>
           <div class="banner">
@@ -167,58 +167,34 @@
               <h2>Czym się zajmujemy</h2>
               <ul class="section__flex">
                 <li class="our-job__item">
-                  <picture>
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="./images/what_we_do/box_1@x2.jpg"
-                      width="370"
-                      height="291"
-                    />
-                    <img
-                      src="./images/what_we_do/box_1@x1.jpg"
+                  <img
+                      src="./images/what_we_do/box_1@370.jpg"
                       alt="komputer"
-                      width="370"
-                      height="291"
+                      srcset="./images/what_we_do/box_1@740.jpg"
+                      sizes="(min-width: 1200px) 370px, 100vw"
                     />
-                  </picture>
                   <div class="our-job__background">
                     <p>Aplikacje komputerowe</p>
                   </div>
                 </li>
                 <li class="our-job__item">
-                  <picture>
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="./images/what_we_do/box_2@x2 x2"
-                      width="370"
-                      height="291"
+                  <img
+                      src="./images/what_we_do/box_2@370.jpg"
+                      alt="komputer"
+                      srcset="./images/what_we_do/box_2@740.jpg"
+                      sizes="(min-width: 1200px) 370px, 100vw"
                     />
-                    <img
-                      src="./images/what_we_do/box_2@x1.jpg"
-                      alt="smartfon"
-                      width="370"
-                      height="291"
-                    />
-                  </picture>
                   <div class="our-job__background">
                     <p>Aplikacje mobilne</p>
                   </div>
                 </li>
                 <li class="our-job__item">
-                  <picture>
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="./images/what_we_do/box_3@x2 x2"
-                      width="370"
-                      height="291"
+                   <img
+                      src="./images/what_we_do/box_3@370.jpg"
+                      alt="komputer"
+                      srcset="./images/what_we_do/box_3@740.jpg"
+                      sizes="(min-width: 1200px) 370px, 100vw"
                     />
-                    <img
-                      src="./images/what_we_do/box_3@x1.jpg"
-                      alt="tablet"
-                      width="370"
-                      height="291"
-                    />
-                  </picture>
                   <div class="our-job__background">
                     <p>Rozwiązania graficzne</p>
                   </div>
@@ -228,38 +204,26 @@
           </section>
         </div>
 
-        <section class="our-team__wrapper--background">
-          <div class="section__space-top section__space-bottom">
-            <div class="sections__container">
+        <section class="">
+          <div class="section__space-top">
+            <div class="sections__container our-team__wrapper--background section__space-top section__space-bottom ">
               <h2>Nasz zespół</h2>
               <ul class="section__grid">
                 <li class="card__person card__person--border">
-                  <picture>
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="./images/our_team/mobile/person1@2x.jpg x2"
-                    />
-
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="./images/our_team/tablet/person1@1x.jpg,
-                                  ./images/our_team/tablet/person1@2x.jpg x2"
-                      sizes="(min-width: 768px) 354px"            
-                    />
-
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="./images/our_team/desktop/person1@1x.jpg,
-                                  ./images/our_team/desktop/person1@2x.jpg 2x"
-                      sizes="(min-width: 1200px) 270px"
-                    />
-
-                    <img
-                      src="./images/our_team/mobile/person1@1x.jpg"
+                   <img
+                      src="./images/our_team/person1@450.jpg"
                       alt="Product Designer"
                       type="jpg"
+                      srcset="
+                        ./images/our_team/person1@270.jpg 270w,
+                        ./images/our_team/person1@354.jpg 354w,
+                        ./images/our_team/person1@540.jpg 540w,
+                        ./images/our_team/person1@708.jpg 708w,
+                        ./images/our_team/person1@900.jpg 900w,                  
+                                               
+                      "
+                      sizes="(min-width: 480px) 450px, (min-width: 787px) 354px, (min-width: 1200px) 270px, 100vw"
                     />
-                  </picture>
                   <p class="card__text">John Doe</p>
                   <p class="card__text--color">Product Designer</p>
                   <div class="social-icons-person">
@@ -289,31 +253,22 @@
                 </li>
 
                 <li class="card__person card__person--border">
-                  <picture>
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="./images/our_team/mobile/person2@2x.jpg x2"
-                    />
-
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="./images/our_team/tablet/person2@1x.jpg,
-                                    ./images/our_team/tablet/person2@2x.jpg x2"
-                      sizes="(min-width: 768px) 354px"              
-                    />
-
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="./images/our_team/desktop/person2@1x.jpg,
-                                    ./images/our_team/desktop/person2@2x.jpg x2"
-                      sizes="(min-width: 1200px) 270px"              
-                    />
+                  
                     <img
-                      src="./images/our_team/mobile/person2@1x.jpg"
+                      src="./images/our_team/person2@450.jpg"
                       alt="Frontend Developer"
                       type="jpg"
+                      srcset="
+                        ./images/our_team/person2@270.jpg 270w,
+                        ./images/our_team/person2@354.jpg 354w,
+                        ./images/our_team/person2@540.jpg 540w,
+                        ./images/our_team/person2@708.jpg 708w,
+                        ./images/our_team/person2@900.jpg 900w,                  
+                                               
+                      "
+                      sizes="(min-width: 480px) 450px, (min-width: 787px) 354px, (min-width: 1200px) 270px, 100vw"
                     />
-                  </picture>
+                
                   <p class="card__text">John Doe</p>
                   <p class="card__text--color">Frontend Developer</p>
                   <div class="social-icons-person">
@@ -343,31 +298,20 @@
                 </li>
 
                 <li class="card__person card__person--border">
-                  <picture>
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="./images/our_team/mobile/person3@2x.jpg x2"
-                    />
-
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="./images/our_team/tablet/person3@1x.jpg,
-                                    ./images/our_team/tablet/person3@2x.jpg x2"
-                      sizes="(min-width: 768px) 354px"              
-                    />
-
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="./images/our_team/desktop/person3@1x.jpg,
-                                    ./images/our_team/desktop/person3@2x.jpg x2"
-                      sizes="(min-width: 1200px) 270px"
-                    />
-                    <img
-                      src="./images/our_team/mobile/person3@1x.jpg"
+                 <img
+                      src="./images/our_team/person3@450.jpg"
                       alt="Marketing"
                       type="jpg"
+                      srcset="
+                        ./images/our_team/person3@270.jpg 270w,
+                        ./images/our_team/person3@354.jpg 354w,
+                        ./images/our_team/person3@540.jpg 540w,
+                        ./images/our_team/person3@708.jpg 708w,
+                        ./images/our_team/person3@900.jpg 900w,                  
+                                               
+                      "
+                      sizes="(min-width: 480px) 450px, (min-width: 787px) 354px, (min-width: 1200px) 270px, 100vw"
                     />
-                  </picture>
                   <p class="card__text">John Doe</p>
                   <p class="card__text--color">Marketing</p>
                   <div class="social-icons-person">
@@ -397,31 +341,20 @@
                 </li>
 
                 <li class="card__person card__person--border">
-                  <picture>
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="./images/our_team/mobile/person4@2x.jpg x2"
-                    />
-
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="./images/our_team/tablet/person4@1x.jpg,
-                                      ./images/our_team/tablet/person4@2x.jpg x2"
-                      sizes="(min-width: 768px) 354px"                
-                    />
-
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="./images/our_team/desktop/person4@1x.jpg,
-                                      ./images/our_team/desktop/person4@2x.jpg x2"
-                      sizes="(min-width: 1200px) 270px"                
-                    />
-                    <img
-                      src="./images/our_team/mobile/person4@1x.jpg"
+                  <img
+                      src="./images/our_team/person4@450.jpg"
                       alt="UI Designer"
                       type="jpg"
+                      srcset="
+                        ./images/our_team/person4@270.jpg 270w,
+                        ./images/our_team/person4@354.jpg 354w,
+                        ./images/our_team/person4@540.jpg 540w,
+                        ./images/our_team/person4@708.jpg 708w,
+                        ./images/our_team/person4@900.jpg 900w,                  
+                                               
+                      "
+                      sizes="(min-width: 480px) 450px, (min-width: 787px) 354px, (min-width: 1200px) 270px, 100vw"
                     />
-                  </picture>
                   <p class="card__text">John Doe</p>
                   <p class="card__text--color">UI Designer</p>
                   <div>
