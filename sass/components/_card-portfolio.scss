@@ -1,13 +1,50 @@
-@media screen and (min-width: 480px) {
-.section__portfolio__box {
-  display: flex;
-  // flex-wrap: wrap;
-  // justify-content: space-between;
-flex-direction: column;
+.sections__container-potrfolio {
+  max-width: 480px;
+  padding: 60px 15px;
+  margin: 0 auto;
+}
+.section-flex-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
   gap: 30px;
 }
+
+.btns__box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-self: center;
+  align-self: center;
+  gap: 16px;
+  margin-bottom: 34px;
+  padding-left: 28px;
+}
+
+.btn {
+  background: var(--light-gray-color);
+  border: var(--light-gray-color);
+  border-radius: 4px;
+
+  &:focus,
+  &:hover {
+    background: var(--blue-color);
+    color: var(--white-color);
+    border: var(--blue-color);
+    border-radius: 4px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: var(--transition);
+  }
+}
+.btn__text {
+  font-weight: 500;
+  line-height: 1.39;
+  display: inline;
+  text-align: center;
+  padding: 6px 22px;
+}
 .card {
- 
   h3 {
     position: relative;
     font-weight: 700;
@@ -31,6 +68,7 @@ flex-direction: column;
 .card__item {
   position: relative;
   overflow: hidden;
+  width: 450px;
 
   &:hover {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06),
@@ -43,7 +81,7 @@ flex-direction: column;
   background-color: var(--blue-transparent-background);
   position: absolute;
   margin: 0 auto;
-  padding: 60px 25px 50px 20px;
+  padding: 80px 25px 80px 25px;
   transition: var(--transition);
   transform: translateY(100%);
 
@@ -59,14 +97,42 @@ flex-direction: column;
 .card__item:focus .card--hidden {
   transform: translateY(0%);
 }
+@media screen and (min-width: 768px) {
+  .sections__container-potrfolio {
+    max-width: 768px;
+  }
+  .btns__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .section-flex-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .card__item {
+    width: 354px;
+  }
+  .card--hidden {  
+   padding: 50px 20px 70px 20px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  .sections__container-potrfolio {
+    padding: 94px 15px;
+    width: 1200px;
+  }
+  .section-flex-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+  }
 
-  .section__portfolio__box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
+  .card__item {
+    width: 370px;
+  }
+  .card--hidden {  
+   padding: 60px 25px 50px 20px;
+  }
 }
-}
+
