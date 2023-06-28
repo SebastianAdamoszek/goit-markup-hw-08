@@ -29,10 +29,6 @@
 }
 .menu__mobile {
   position:fixed;  
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 32px;
   background-color: var(--white-color);
   padding: 48px 0px 48px 40px;  
   inset: 0;
@@ -59,8 +55,16 @@
     fill: currentColor;
   }
 }
+.nav__column {
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+
+}
 .nav-padding {
-  padding-bottom: 100px;
+  padding-bottom: 302px;
 }
 .header__link {
   font-size: 34px;
@@ -75,7 +79,9 @@
   color: var(--black-text-color);
   transition: var(--transition);
 }
-
+.section-padding--bottom {
+  padding-bottom: 64px;
+}
 .social-media__flex {
   display: flex;
   justify-content: flex-start;
