@@ -37,7 +37,7 @@
     font-size: 14px;
     color: var(--black-text-color);
     transition: var(--transition);
-    line-height: 0;
+    line-height: 1.8;
   }
   //  header text decoration
 
@@ -50,7 +50,7 @@
     width: 0;
     height: 4px;
     position: absolute;
-    top: 48px;
+    top: 46px;
     right: 0;
     border-radius: 2px;
     background: var(--blue-color);
