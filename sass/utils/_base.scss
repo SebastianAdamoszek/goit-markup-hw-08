@@ -34,15 +34,13 @@ img {
 
 
   .page-wrapper {
-    min-width: 480px;
     max-width: 1600px;
     margin: 0 auto;
   }
 
   .sections__container {
-    padding: 0 15px;
-    max-width: 480px;
     width: 100%;
+    padding: 0 15px;
     margin: 0 auto;   
     display: flex;
     flex-direction: column;
@@ -78,11 +76,15 @@ img {
     grid-template-columns: 1fr 1fr ;   
     gap: 30px;
   }
- 
+  @media screen and (min-width: 480px) {
+    .sections__container {
+    width: 480px;
+  }
+} 
 
 @media screen and (min-width: 768px) {
   .sections__container {
-    max-width: 768px;
+    width: 768px;
   }
   .section__grid {
     display: grid;
@@ -97,7 +99,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .sections__container {
-    max-width: 1200px;
+    width: 1200px;
   }
   .section__grid {
     display: grid;
