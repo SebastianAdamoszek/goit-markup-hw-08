@@ -11,13 +11,12 @@
 }
 
 .btns__box {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-self: center;
-  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: flex-start;
   gap: 16px;
-  margin-bottom: 34px;
-  padding-left: 28px;
+  padding-bottom: 34px;  
 }
 
 .btn {
@@ -102,8 +101,9 @@
     max-width: 768px;
   }
   .btns__box {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .section-flex-box {
     display: grid;
