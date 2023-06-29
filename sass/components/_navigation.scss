@@ -1,6 +1,9 @@
 .nav__tablet-desktop {
   display: none;
 }
+.nav__text--side-color {
+    color: var(--blue-color);
+  }
 
 @media screen and (min-width: 768px) {
   .burger__btn,
@@ -21,6 +24,7 @@
     gap: 46px;
     
   }
+  
   .nav__text--side-active:after {
     display: block;
     content: "";
@@ -77,7 +81,7 @@
   .nav__tablet-desktop {
     gap: 60px;
   }
-  
+    
   .nav__text--side-active:after {
     display: block;
     content: "";
